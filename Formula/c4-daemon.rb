@@ -5,16 +5,16 @@ class C4Daemon < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.0/c4-daemon-aarch64-apple-darwin.tar.xz"
-      sha256 "d3076723cd3995f0adf68b7816fc1cddef35885dc6a357a7cd85bb99d1ca88bd"
+      sha256 "b0c7b16be076132f0f316920e6042960cf128ee88f1a180f4cf5fd000d6e85f1"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.0/c4-daemon-x86_64-apple-darwin.tar.xz"
-      sha256 "75faafd42096340e08c9ddc830eac479fd00273f7ad494b2719b586b4ebfc219"
+      sha256 "01d1f0e89f68b8a9408205523e0f83c28b1ab014a2859923bc1187e2ddcb5313"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
       url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.0/c4-daemon-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "14894404bdf8a4fdfc0b69f00be4c08af1ffdf4bf988311ef03d6872cc6877bc"
+      sha256 "8e175798036c25e90c87c6dd7de85d35f5b64e1465a305562e073ec1de6d0611"
   end
 
   BINARY_ALIASES = {
