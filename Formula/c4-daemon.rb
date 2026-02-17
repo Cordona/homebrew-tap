@@ -1,20 +1,20 @@
 class C4Daemon < Formula
   desc "Claude Code Control Center Terminal Daemon - Processes hooks and consumes user commands via Kafka messages"
   homepage "https://github.com/Cordona/claude-code-agent"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.0/c4-daemon-aarch64-apple-darwin.tar.xz"
-      sha256 "b0c7b16be076132f0f316920e6042960cf128ee88f1a180f4cf5fd000d6e85f1"
+      url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.1/c4-daemon-aarch64-apple-darwin.tar.xz"
+      sha256 "69ccf48a65e6349d1bf64f3aec6492787b96b4f98dba1c2395e52ebbe0833a0f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.0/c4-daemon-x86_64-apple-darwin.tar.xz"
-      sha256 "01d1f0e89f68b8a9408205523e0f83c28b1ab014a2859923bc1187e2ddcb5313"
+      url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.1/c4-daemon-x86_64-apple-darwin.tar.xz"
+      sha256 "b1bc78c516d9e9189efdd4aadc8422278f295ae7eace3dfcf59388d499ef5461"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.0/c4-daemon-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8e175798036c25e90c87c6dd7de85d35f5b64e1465a305562e073ec1de6d0611"
+      url "https://github.com/Cordona/claude-code-agent/releases/download/v0.3.1/c4-daemon-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6798071c7064c0c765f7c4a2a8b7978784092c866d536216cdd45c147ad8b988"
   end
 
   BINARY_ALIASES = {
